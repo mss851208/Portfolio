@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 body {
 	--color-text: #fff;
-	--color-bg: #101010;
+	--color-bg: #242423;
 	--color-link: #fff;
 	--color-link-hover: #0b44fb;
 	font-family: "Niramit", Arial, sans-serif;
@@ -140,11 +140,6 @@ main {
 	pointer-events: auto;
 	font-weight: bold;
 	cursor: pointer;
-	margin: 0 0.5rem;
-}
-
-.menutop__item--social {
-	color: #323232;
 }
 
 .menu {
@@ -182,7 +177,7 @@ main {
 	position: relative;
 	overflow: hidden;
 	line-height: 1.5;
-	margin: 1rem 0 0 0;
+	margin: 0 0 0 0;
 }
 
 .menu__item-text {
@@ -401,7 +396,7 @@ main {
 		grid-template-rows: auto auto auto;
 		grid-template-areas: 'pageheader menutop'
 							'... ...'
-							'... codropsheader';
+							'line codropsheader';
 	}
 	.codrops-header {
 		grid-area: codropsheader;
@@ -409,6 +404,30 @@ main {
 		justify-self: end;
 		text-align: right;
 	}
+	
+	.line{
+		grid-area: line;
+		position: relative;
+	}
+	.line::before{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 10px;
+		width: 2px;
+		height: 200px;
+		background-color: #fff;
+	}
+	.line::after{
+		content: '';
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		width: 150px;
+		height: 2px;
+		background-color: #fff;
+	}
+
 	.codrops-links {
 		margin: 0;
 	}
@@ -418,6 +437,8 @@ main {
 	.pageheader {
 		grid-area: pageheader;
 		margin: 0;
+		display: flex;
+		align-items: center;
 	}
 	.menutop {
 		grid-area: menutop;
@@ -431,6 +452,9 @@ main {
 	}
 	.menutop__item:nth-child(2) {
 		margin: 0 2rem 0 0;
+	}
+	.menutop__item:nth-child(1) {
+		margin: 0 1rem 0 0;
 	}
 	.menu {
 		top: 0;
@@ -463,3 +487,40 @@ main {
 		padding: 10vh 1rem;
 	}
 }
+.menutop__item:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.menutop__item:visited{
+	text-decoration: none;
+	color: #fff;
+}
+.menutop__item.active{
+	text-decoration: underline;
+	position: relative;
+	cursor: default;
+}
+.menutop__item.active::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 10px;
+	height: 15%;
+	background-color: #ff6700;
+	z-index: -1;
+}
+@media(max-width: 768px) {
+	.menutop__item{
+		margin: 0 .5rem 0;
+	}
+	.menutop__item.active::before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		top: 10px;
+		height: 30%;
+		background-color: #ff6700;
+		z-index: -1;
+	}
+}
+
