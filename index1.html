@@ -21,6 +21,16 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
+<style>
+	.menu__item--current .menu__item-text::before{
+	content: none !important ; 
+	position: absolute;
+	font-size: 16px;
+	top: -5%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+</style>
 
 <body class="loading">
 	<svg class="hidden">
@@ -45,27 +55,12 @@
 		<nav class="menu">
 			<div class="menu__item">
 				<span class="menu__item-number">01</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Studio</span></span>
+				<span class="menu__item-textwrap"><span class="menu__item-text">海報設計</span></span>
 				<a class="menu__item-link">explore</a>
 			</div>
 			<div class="menu__item">
 				<span class="menu__item-number">02</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Mixer</span></span>
-				<a class="menu__item-link">explore</a>
-			</div>
-			<div class="menu__item">
-				<span class="menu__item-number">03</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Objects</span></span>
-				<a class="menu__item-link">explore</a>
-			</div>
-			<div class="menu__item">
-				<span class="menu__item-number">04</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Delta</span></span>
-				<a class="menu__item-link">explore</a>
-			</div>
-			<div class="menu__item">
-				<span class="menu__item-number">05</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Express</span></span>
+				<span class="menu__item-textwrap"><span class="menu__item-text">Banner設計</span></span>
 				<a class="menu__item-link">explore</a>
 			</div>
 		</nav>
