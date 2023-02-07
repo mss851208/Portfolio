@@ -21,12 +21,22 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
+	<!-- lightgallery -->
+	<link type="text/css" href="js/vendor/lightgallery/css/lightgallery.css" rel="stylesheet" />
+	<link type="text/css" href="js/vendor/lightgallery/css/lg-zoom.css" rel="stylesheet" />
+	<link type="text/css" href="js/vendor/lightgallery/css/lg-thumbnail.css" rel="stylesheet" />
 
 
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
+<style>
+	.gallery-container {
+		width: 1000px;
+		height: 800px;
+		overflow: hidden;
+	}
+</style>
 
 <body class="loading">
 	<svg class="hidden">
@@ -44,9 +54,8 @@
 			</header>
 			<h1 class="pageheader"><img src="img/Logo.png" alt="" class="mr-3">鄒汶峻 | Wen Jun</h1>
 			<nav class="menutop">
-				<a href="index.html" class="menutop__item active disabled">專案</a>
-				<a href="index1.html" class="menutop__item">網頁/UI 設計</a>
-				<a href="index2.html" class="menutop__item">平面設計</a>
+				<a href="index.html" class="menutop__item active disabled">網頁設計</a>
+				<a href="index1.html" class="menutop__item">UI/平面設計</a>
 				<a href="https://mss851208.github.io/iPortfolio/" class="menutop__item"><i
 						class="fa fa-long-arrow-left mr-2" aria-hidden="true"></i>個人網站</a>
 			</nav>
@@ -55,46 +64,68 @@
 		<nav class="menu">
 			<div class="menu__item">
 				<span class="menu__item-number">01<span class="text-white"></span></span>
-				<span class="menu__item-textwrap"><span class="menu__item-text audit">中央政府總決算審核報告</span></span>
+				<span class="menu__item-textwrap"><span class="menu__item-text project">中央政府總決算審核報告</span></span>
 				<a class="menu__item-link">explore</a>
 			</div>
 			<div class="menu__item">
 				<span class="menu__item-number">02<span class="text-white"></span></span>
-				<span class="menu__item-textwrap"><span class="menu__item-text kmcc">議事資訊整合查詢系統</span></span>
+				<span class="menu__item-textwrap"><span class="menu__item-text project">推動中小學精進方案</span></span>
 				<a class="menu__item-link">explore</a>
 			</div>
 			<div class="menu__item">
 				<span class="menu__item-number">03<span class="text-white"></span></span>
-				<span class="menu__item-textwrap"><span class="menu__item-text moe">推動中小學數位學習精進方案</span></span>
+				<span class="menu__item-textwrap"><span class="menu__item-text project">議會資訊整合系統</span></span>
 				<a class="menu__item-link">explore</a>
 			</div>
 			<div class="menu__item">
 				<span class="menu__item-number">04<span class="text-white"></span></span>
-				<span class="menu__item-textwrap"><span class="menu__item-text kcg">單一帳號認證平台</span></span>
-				<a class="menu__item-link">explore</a>
-			</div>
-			<div class="menu__item">
-				<span class="menu__item-number">05<span class="text-white"></span></span>
-				<span class="menu__item-textwrap"><span class="menu__item-text ncyu">全球資訊網首頁</span></span>
+				<span class="menu__item-textwrap"><span class="menu__item-text project">其他公家機關</span></span>
 				<a class="menu__item-link">explore</a>
 			</div>
 		</nav>
 		<div class="page page--preview">
 			<div class="gridwrap">
 				<div class="grid grid--layout-1">
-					<div class="grid__item" style="background-image: url('https://i.ibb.co/z6C1XLZ/mf-1.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit2.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit1.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit8.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit4.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit5.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit6.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit7.png');"></div>
+					<div class="grid__item" style="background-image: url('img/audit/audit9.png');"></div>
 				</div>
 				<div class="grid grid--layout-2">
-					<div class="grid__item" style="background-image: url('https://i.ibb.co/z6C1XLZ/mf-1.png');"></div>
+					<div class="grid__item" style="background-image: url('img/moe/moe1.png')"></div>
+					<div class="grid__item" style="background-image: url('img/moe/moe2.png')"></div>
+					<div class="grid__item" style="background-image: url('img/moe/moe3.png')"></div>
+					<div class="grid__item" style="background-image: url('img/moe/moe4.png')"></div>
+					<div class="grid__item" style="background-image: url('img/moe/moe.png')"></div>
+					<div class="grid__item" style="background-image: url('img/moe/moe5.png')"></div>
+					<div class="grid__item" style="background-image: url('img/moe/moe6.png')"></div>
+					<div class="grid__item" style="background-image: url('img/moe/moe7.png')"></div>
 				</div>
 				<div class="grid grid--layout-3">
-					<div class="grid__item" style="background-image: url('https://i.ibb.co/z6C1XLZ/mf-1.png');"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc.png')"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc3.png')"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc1.png')"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc2.png')"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc6.png')"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc7.png')"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc4.png')"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc5.png')"></div>
+					<div class="grid__item" style="background-image: url('img/kcc/kcc8.png')"></div>
 				</div>
 				<div class="grid grid--layout-4">
-					<div class="grid__item" style="background-image: url('https://i.ibb.co/z6C1XLZ/mf-1.png');"></div>
-				</div>
-				<div class="grid grid--layout-5">
-					<div class="grid__item" style="background-image: url('https://i.ibb.co/z6C1XLZ/mf-1.png');"></div>
+					<div class="grid__item" style="background-image: url('img/other/other.png')"></div>
+					<div class="grid__item" style="background-image: url('img/other/other1.png')"></div>
+					<div class="grid__item" style="background-image: url('img/other/other2.png')"></div>
+					<div class="grid__item" style="background-image: url('img/other/other3.png')"></div>
+					<div class="grid__item" style="background-image: url('img/other/other4.png')"></div>
+					<div class="grid__item" style="background-image: url('img/other/other5.png')"></div>
+					<div class="grid__item" style="background-image: url('img/other/other6.png')"></div>
+					<div class="grid__item" style="background-image: url('img/other/other7.png')"></div>
 				</div>
 				<button class="gridback"><svg class="icon icon--arrow">
 						<use xlink:href="#icon-arrow"></use>
@@ -104,97 +135,873 @@
 				<div class="content__item">
 					<div class="title_click">
 						<p>Click Me!<img src="img/trend-1.1s-47px.svg" alt=""></p>
-						<h2 class="text-center mb-3"><a href="https://www.behance.net/gallery/105354897/-UIUX-design"
-								target="_black">麥方之道 | UI/UX Design</a></h2>
+						<h2 class="text-center mb-3 d-flex justify-content-center align-items-center flex-wrap">
+							<span class="mr-2">審計部_中央政府總決算審核報告</span>
+							<a href="https://auditreport.audit.gov.tw/" target="_black"
+								style="font-size: 28px !important;">(前台)</a>
+							<a href="" data-toggle="modal" data-target="#audit"
+								style="font-size: 28px !important;">(後台)</a>
+						</h2>
 					</div>
 					<ul>
-						<li>網頁架構:首頁、商品菜單、購物車、會員登入、店鋪資訊、最新消息。</li>
-						<li>網頁色系:麵包橘黃色#FBB264、黑曜色#262626為主。</li>
-						<li>網站特色為極簡風格，搭配線條感，捨棄非必要的裝飾帶來的視覺負擔，提升瀏覽目標。</li>
-						<li>繪製UI flow'Wireframe，從使用者角度出發規劃。</li>
-						<li>繪製Mockup，模擬網站風格調整及預期可能出現體驗問題。</li>
-						<li>繪製Prototype，轉場特效、互動效果回饋。</li>
-						<li>設計不同瀏覽器框度自適應(RWD)。</li>
-						<li>主題色符合AA級標準規範，提升瀏覽上視覺感官。</li>
+						<li>此專案主要負責角色為，優化及整合原有系統前、後台介面的設計與切版。</li>
+						<li>網頁色系:車菊藍<span style="background-color: #3b478a;">#3b478a</span> 、淡絲藍 <span
+								style="background-color: #f4f8ff; color: black;">#f4f8ff</span> 為主。</li>
+						<li>
+							前台網站兩大結構為：審核報告、全文檢索<br>
+							- 審核報告：畫面主要為[年度]及[政府別]兩項資訊最為重要，因此在搜尋結果呈現方式為一列兩個項目，每個項目內只有報告日期及標題，讓使用者快速明瞭找尋到目標項目。<br>
+							-
+							全文檢索：畫面內搜尋條件較多，所以在搜尋結果呈現方式為table較能清楚每一列資訊，在手機瀏覽時table特別以左右方式呈現，相較於一般需要左右滑動的表單更能讓使用者一目了然。<br>
+							後台網站結構為：公告欄、審核報告作業、權限設定、統計報表、系統設定
+						</li>
+						<li>Bootstrap框架元件製作，使用多個第三方套件，例：vue-treeview等。</li>
+						<li>適應所有跨瀏覽器及移動設備(RWD)。</li>
+						<li>通過符合無障礙AA標章，增加網站的可訪問性。</li>
 					</ul>
 				</div>
 				<div class="content__item">
 					<div class="title_click">
 						<p>Click Me!<img src="img/trend-1.1s-47px.svg" alt=""></p>
-						<h2 class="text-center mb-3"><a href="https://www.behance.net/gallery/105354897/-UIUX-design"
-								target="_black">麥方之道 | UI/UX Design</a></h2>
+						<h2 class="text-center mb-3 d-flex justify-content-center align-items-center flex-wrap">
+							<span class="mr-2">教育部_推動中小學精進方案</span>
+							<a href="" data-toggle="modal" data-target="#moef"
+								style="font-size: 28px !important;">(前台)</a>
+							<a href="" data-toggle="modal" data-target="#moeb"
+								style="font-size: 28px !important;">(後台)</a>
+						</h2>
 					</div>
 					<ul>
-						<li>網頁架構:首頁、商品菜單、購物車、會員登入、店鋪資訊、最新消息。</li>
-						<li>網頁色系:麵包橘黃色#FBB264、黑曜色#262626為主。</li>
-						<li>網站特色為極簡風格，搭配線條感，捨棄非必要的裝飾帶來的視覺負擔，提升瀏覽目標。</li>
-						<li>繪製UI flow'Wireframe，從使用者角度出發規劃。</li>
-						<li>繪製Mockup，模擬網站風格調整及預期可能出現體驗問題。</li>
-						<li>繪製Prototype，轉場特效、互動效果回饋。</li>
-						<li>設計不同瀏覽器框度自適應(RWD)。</li>
-						<li>主題色符合AA級標準規範，提升瀏覽上視覺感官。</li>
+						<li>此專案主要負責角色為，新增優化及整合原有系統前、後台介面的設計與切版。</li>
+						<li>網頁色系:深紫<span style="background-color: #3D2A75;">#3D2A75</span> 為主。</li>
+						<li>
+							此網站設計目的，為加強學生數位科技應用能力，熟悉數位學習平臺、工具與資源使用，並運用數位學習平臺培養自主學習能力，行政院推動中小學數位學習精進方案，可縮減城鄉數位教育落差達公平教育的目標，並於疫情期間可支援經濟弱勢、多子家庭學生有學習載具可使用。
+						</li>
+						<li>
+							前台架構：最新消息、方案簡介、常見問題、成果專區、前瞻計畫、相關連結、推動架構<br>
+							後台架構：選單管理、Banner管理、最新消息、基本項目維護、模組組態管理、全域權限
+						</li>
+						<li>使用SASS管理及多個第三方插件應用及互動效果。</li>
+						<li>使用Bootstrap客製元件切版，排版上使用共構元件管理。</li>
+						<li>適應所有跨瀏覽器及移動設備(RWD)。</li>
+						<li>通過符合無障礙AA標章，增加網站的可訪問性。</li>
 					</ul>
 				</div>
 				<div class="content__item">
 					<div class="title_click">
-						<p>Click Me!<img src="img/trend-1.1s-47px.svg" alt=""></p>
-						<h2 class="text-center mb-3"><a href="https://www.behance.net/gallery/105354897/-UIUX-design"
-								target="_black">麥方之道 | UI/UX Design</a></h2>
+						<h2 class="text-center mb-3 d-flex justify-content-center align-items-center flex-wrap">
+							<span class="mr-2">金門縣_議會資訊整合系統</span>
+							<a href="https://agenda.kmcc.gov.tw/" target="_blank"
+								style="font-size: 28px !important;">(前台)</a>
+							<a href="" data-toggle="modal" data-target="#kccb"
+								style="font-size: 28px !important;">(後台)</a>
+						</h2>
 					</div>
+					<p class="h5 mb-4" style="text-indent: 2em;">
+
+					</p>
 					<ul>
-						<li>網頁架構:首頁、商品菜單、購物車、會員登入、店鋪資訊、最新消息。</li>
-						<li>網頁色系:麵包橘黃色#FBB264、黑曜色#262626為主。</li>
-						<li>網站特色為極簡風格，搭配線條感，捨棄非必要的裝飾帶來的視覺負擔，提升瀏覽目標。</li>
-						<li>繪製UI flow'Wireframe，從使用者角度出發規劃。</li>
-						<li>繪製Mockup，模擬網站風格調整及預期可能出現體驗問題。</li>
-						<li>繪製Prototype，轉場特效、互動效果回饋。</li>
-						<li>設計不同瀏覽器框度自適應(RWD)。</li>
-						<li>主題色符合AA級標準規範，提升瀏覽上視覺感官。</li>
+						<li>此專案主要負責角色為，新增優化及整合原有系統前、後台介面的設計與切版。</li>
+						<li>網頁色系:深橙色<span style="background-color: #bd5b00;">#bd5b00</span> 為主。</li>
+						<li>
+							此網站設計目的，為配合議事資訊透明化趨勢，落實議事日程、會議紀錄等相關
+							資訊的對外揭露，建置議事資訊提供管理單位及其使用人可透過本專
+							案系統進行各項有關議事資訊歸檔程序，並自動產出各項報表。
+						</li>
+						<li>
+							前台架構：議事日程表查詢、會議紀錄、縣政總質詢會議紀錄、議案查詢<br>
+							後台架構：議事管理、名單管理、報表列印、公告欄、權限設定、系統安全紀錄
+						</li>
+						<li>使用多個第三方插件應用及互動效果。</li>
+						<li>使用Bootstrap客製元件切版，排版上使用共構元件管理。</li>
+						<li>適應所有跨瀏覽器及移動設備(RWD)。</li>
 					</ul>
 				</div>
 				<div class="content__item">
 					<div class="title_click">
-						<p>Click Me!<img src="img/trend-1.1s-47px.svg" alt=""></p>
-						<h2 class="text-center mb-3"><a href="https://www.behance.net/gallery/105354897/-UIUX-design"
-								target="_black">麥方之道 | UI/UX Design</a></h2>
+						<h2 class="text-center mb-5">
+							其他公家機關
+						</h2>
 					</div>
 					<ul>
-						<li>網頁架構:首頁、商品菜單、購物車、會員登入、店鋪資訊、最新消息。</li>
-						<li>網頁色系:麵包橘黃色#FBB264、黑曜色#262626為主。</li>
-						<li>網站特色為極簡風格，搭配線條感，捨棄非必要的裝飾帶來的視覺負擔，提升瀏覽目標。</li>
-						<li>繪製UI flow'Wireframe，從使用者角度出發規劃。</li>
-						<li>繪製Mockup，模擬網站風格調整及預期可能出現體驗問題。</li>
-						<li>繪製Prototype，轉場特效、互動效果回饋。</li>
-						<li>設計不同瀏覽器框度自適應(RWD)。</li>
-						<li>主題色符合AA級標準規範，提升瀏覽上視覺感官。</li>
+						<li>
+							<p class="h4 mb-0">全球資訊網</p>
+							<a style="cursor:pointer;font-size: 20px !important;" id="dynamic-gallery-ncyu">
+								嘉義大學---首頁
+								<span style="font-size: 14px;">(未來會上線)</span>
+							</a>
+							<a style="cursor: pointer;;font-size: 20px !important;" id="dynamic-gallery-chat">
+								國防部福利事業管理處智能客服---聊天機器人
+								<span style="font-size: 14px;">(未來會上線)</span>
+							</a>
+							<a style="cursor: pointer;;font-size: 20px !important;"
+								id="dynamic-gallery-tax">基隆市稅務局---首頁</a>
+							<a style="cursor: pointer;;font-size: 20px !important;"
+								id="dynamic-gallery-ocac">中華民國僑務委員會---首頁</a>
+						</li>
+						<li>
+							<p class="h4 mb-0">登入頁</p>
+							<a href="https://eip.kinmen.gov.tw/login.php"
+								style="font-size: 20px !important;">金門縣---行動智慧辦公系統</a>
+							<a href="https://accounts.kcg.gov.tw/appmenu_product.php"
+								style="font-size: 20px !important;">高市府---單一帳號認證平台</a>
+							<a style="cursor: pointer;font-size: 20px !important;"
+								id="dynamic-gallery-taipion">台北市---電子認證</a>
+						</li>
+						<li>
+							<p class="h4 mb-0">儀表板</p>
+							<a style="cursor: pointer;font-size: 20px !important;"
+								id="dynamic-gallery-kc">金門縣---行動智慧辦公系統</a>
+							<a style="cursor: pointer;font-size: 20px !important;"
+								id="dynamic-gallery-jy">司法院---單一帳管系統</a>
+							<a style="cursor: pointer;font-size: 20px !important;" id="dynamic-gallery-yi">
+								宜蘭政府---員工入口網</a>
+						</li>
 					</ul>
 				</div>
-				<div class="content__item">
-					<div class="title_click">
-						<p>Click Me!<img src="img/trend-1.1s-47px.svg" alt=""></p>
-						<h2 class="text-center mb-3"><a href="https://www.behance.net/gallery/105354897/-UIUX-design"
-								target="_black">麥方之道 | UI/UX Design</a></h2>
-					</div>
-					<ul>
-						<li>網頁架構:首頁、商品菜單、購物車、會員登入、店鋪資訊、最新消息。</li>
-						<li>網頁色系:麵包橘黃色#FBB264、黑曜色#262626為主。</li>
-						<li>網站特色為極簡風格，搭配線條感，捨棄非必要的裝飾帶來的視覺負擔，提升瀏覽目標。</li>
-						<li>繪製UI flow'Wireframe，從使用者角度出發規劃。</li>
-						<li>繪製Mockup，模擬網站風格調整及預期可能出現體驗問題。</li>
-						<li>繪製Prototype，轉場特效、互動效果回饋。</li>
-						<li>設計不同瀏覽器框度自適應(RWD)。</li>
-						<li>主題色符合AA級標準規範，提升瀏覽上視覺感官。</li>
-					</ul>
-				</div>
-			</div><!-- /page -->
+			</div>
+		</div><!-- /page -->
 	</main>
+
+
+	<!-- Modal -->
+	<!-- 審計部 -->
+	<div class="modal fade" id="audit" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="auditLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" style=" min-width: calc(100vw - 60px);
+		max-width: calc(100vw - 60px);
+		margin: 15px 15px 15px 30px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="auditLabel">
+						審計部_中央政府總決算審核報告--後台畫面
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-dark">
+						因涉及資訊隱私等問題，只能展出部分畫面。
+					</p>
+					<div class="d-flex justify-content-center">
+						<div class="attachment_group m-t-10">
+							<div class="gallery-container" id="gallery-container">
+								<a class="gallery-item" data-src="img/audit/1.png">
+									<img class="img-fluid" src="img/audit/1.png" />
+								</a>
+								<a class="gallery-item" data-src="img/audit/2.png">
+									<img class="img-fluid" src="img/audit/2.png" />
+								</a>
+								<a class="gallery-item" data-src="img/audit/3.png">
+									<img class="img-fluid" src="img/audit/3.png" />
+								</a>
+								<a class="gallery-item" data-src="img/audit/4.png">
+									<img class="img-fluid" src="img/audit/4.png" />
+								</a>
+								<a class="gallery-item" data-src="img/audit/5.png">
+									<img class="img-fluid" src="img/audit/5.png" />
+								</a>
+								<a class="gallery-item" data-src="img/audit/6.png">
+									<img class="img-fluid" src="img/audit/6.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 中小學精進(前台) -->
+	<div class="modal fade" id="moef" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="moefLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" style=" min-width: calc(100vw - 60px);
+		max-width: calc(100vw - 60px);
+		margin: 15px 15px 15px 30px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="moefLabel">
+						教育部_推動中小學精進方案--前台畫面
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-dark">
+						僅列出部分畫面，目前等待無障礙通過，之後會正式上線。
+					</p>
+					<div class="d-flex justify-content-center">
+						<div class="attachment_group m-t-10">
+							<div class="gallery-container" id="gallery-container-moef">
+								<a class="gallery-item" data-src="img/moe/1.png">
+									<img class="img-fluid" src="img/moe/1.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/2.png">
+									<img class="img-fluid" src="img/moe/2.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/3.png">
+									<img class="img-fluid" src="img/moe/3.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/4.png">
+									<img class="img-fluid" src="img/moe/4.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/5.png">
+									<img class="img-fluid" src="img/moe/5.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/6.png">
+									<img class="img-fluid" src="img/moe/6.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/7.png">
+									<img class="img-fluid" src="img/moe/7.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 中小學精進(後台) -->
+	<div class="modal fade" id="moeb" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="moebLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" style=" min-width: calc(100vw - 60px);
+		max-width: calc(100vw - 60px);
+		margin: 15px 15px 15px 30px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="moebLabel">
+						審計部_中央政府總決算審核報告--後台畫面
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-dark">
+						因涉及資訊隱私等問題，只能展出部分畫面。
+					</p>
+					<div class="d-flex justify-content-center">
+						<div class="attachment_group m-t-10">
+							<div class="gallery-container" id="gallery-container-moeb">
+								<a class="gallery-item" data-src="img/moe/b1.png">
+									<img class="img-fluid" src="img/moe/b1.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/b2.png">
+									<img class="img-fluid" src="img/moe/b2.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/b3.png">
+									<img class="img-fluid" src="img/moe/b3.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/b4.png">
+									<img class="img-fluid" src="img/moe/b4.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/b5.png">
+									<img class="img-fluid" src="img/moe/b5.png" />
+								</a>
+								<a class="gallery-item" data-src="img/moe/b6.png">
+									<img class="img-fluid" src="img/moe/b6.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 金門議事會(後台) -->
+	<div class="modal fade" id="kccb" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="kccLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" style=" min-width: calc(100vw - 60px);
+		max-width: calc(100vw - 60px);
+		margin: 15px 15px 15px 30px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="kccLabel">
+						金門縣_議會資訊整合系統--後台畫面
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-dark">
+						因涉及資訊隱私等問題，只能展出部分畫面。
+					</p>
+					<div class="d-flex justify-content-center">
+						<div class="attachment_group m-t-10">
+							<div class="gallery-container" id="gallery-container-kccb">
+								<a class="gallery-item" data-src="img/kcc/1.png">
+									<img class="img-fluid" src="img/kcc/1.png" />
+								</a>
+								<a class="gallery-item" data-src="img/kcc/2.png">
+									<img class="img-fluid" src="img/kcc/2.png" />
+								</a>
+								<a class="gallery-item" data-src="img/kcc/3.png">
+									<img class="img-fluid" src="img/kcc/3.png" />
+								</a>
+								<a class="gallery-item" data-src="img/kcc/4.png">
+									<img class="img-fluid" src="img/kcc/4.png" />
+								</a>
+								<a class="gallery-item" data-src="img/kcc/5.png">
+									<img class="img-fluid" src="img/kcc/5.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 金門議事會(後台) -->
+	<div class="modal fade" id="kccb" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="kccLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" style=" min-width: calc(100vw - 60px);
+		max-width: calc(100vw - 60px);
+		margin: 15px 15px 15px 30px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="kccLabel">
+						金門縣_議會資訊整合系統--後台畫面
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-dark">
+						因涉及資訊隱私等問題，只能展出部分畫面。
+					</p>
+					<div class="d-flex justify-content-center">
+						<div class="attachment_group m-t-10">
+							<div class="gallery-container" id="gallery-container-kccb">
+								<a class="gallery-item" data-src="img/kcc/1.png">
+									<img class="img-fluid" src="img/kcc/1.png" />
+								</a>
+								<a class="gallery-item" data-src="img/kcc/2.png">
+									<img class="img-fluid" src="img/kcc/2.png" />
+								</a>
+								<a class="gallery-item" data-src="img/kcc/3.png">
+									<img class="img-fluid" src="img/kcc/3.png" />
+								</a>
+								<a class="gallery-item" data-src="img/kcc/4.png">
+									<img class="img-fluid" src="img/kcc/4.png" />
+								</a>
+								<a class="gallery-item" data-src="img/kcc/5.png">
+									<img class="img-fluid" src="img/kcc/5.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/vendor/jquery/jquery.min.js"></script>
 	<script src="js/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
+
+	<script src="js/vendor/lightgallery/js/lightgallery.min.js"></script>
+	<script src="js/vendor/lightgallery/js/plgins/thumbnail/lg-thumbnail.min.js"></script>
+	<script src="js/vendor/lightgallery/js/plgins/zoom/lg-zoom.min.js"></script>
+	<script src="js/vendor/lightgallery/js/plgins/share/lg-share.min.js"></script>
+	<script src="js/vendor/lightgallery/js/plgins/hash/lg-hash.min.js"></script>
+
 	<script src="js/demo.js"></script>
+	<script>
+		const $lgContainer = document.getElementById("gallery-container");
+		const $lgContainermoef = document.getElementById("gallery-container-moef");
+		const $lgContainermoeb = document.getElementById("gallery-container-moeb");
+		const $lgContainerkccb = document.getElementById("gallery-container-kccb");
+		const lg = lightGallery($lgContainer, {
+			speed: 500,
+			container: $lgContainer,
+			// Do not allow users to close the gallery
+			closable: false,
+			// Add maximize icon to enlarge the gallery
+			showMaximizeIcon: true,
+			plugins: [lgZoom, lgThumbnail]
+		});
+		lg.openGallery(0);
+		const lgmoef = lightGallery($lgContainermoef, {
+			speed: 500,
+			container: $lgContainermoef,
+			// Do not allow users to close the gallery
+			closable: false,
+			// Add maximize icon to enlarge the gallery
+			showMaximizeIcon: true,
+			plugins: [lgZoom, lgThumbnail]
+		});
+		lgmoef.openGallery(0);
+		const lgmoeb = lightGallery($lgContainermoeb, {
+			speed: 500,
+			container: $lgContainermoeb,
+			// Do not allow users to close the gallery
+			closable: false,
+			// Add maximize icon to enlarge the gallery
+			showMaximizeIcon: true,
+			plugins: [lgZoom, lgThumbnail]
+		});
+		lgmoeb.openGallery(0);
+		const lgkccb = lightGallery($lgContainerkccb, {
+			speed: 500,
+			container: $lgContainerkccb,
+			// Do not allow users to close the gallery
+			closable: false,
+			// Add maximize icon to enlarge the gallery
+			showMaximizeIcon: true,
+			plugins: [lgZoom, lgThumbnail]
+		});
+		lgkccb.openGallery(0);
 
 
+
+
+		const $dynamicGallery = document.getElementById("dynamic-gallery-chat");
+		const dynamicGallery = window.lightGallery($dynamicGallery, {
+			dynamic: true,
+			plugins: [lgZoom, lgThumbnail],
+			dynamicEl: [
+				{
+					src: "img/chat/1.gif",
+					thumb: "img/chat/1.gif",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>國防部智能客服</h4>
+                <p></p></div>
+						`
+				},
+				{
+					src: "img/chat/2.png",
+					thumb: "img/chat/2.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>國防部智能客服</h4>
+                <p>文字輸入</p></div>
+						`
+				},
+				{
+					src: "img/chat/3.png",
+					thumb: "img/chat/3.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>國防部智能客服</h4>
+                <p>快速選單</p></div>
+						`
+				},
+				{
+					src: "img/chat/4.png",
+					thumb: "img/chat/4.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>國防部智能客服</h4>
+                <p>回覆輪播</p></div>
+						`
+				},
+				{
+					src: "img/chat/5.png",
+					thumb: "img/chat/5.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>國防部智能客服</h4>
+                <p>手機版型</p></div>
+						`
+				},
+			]
+		});
+		$dynamicGallery.addEventListener("click", () => {
+			dynamicGallery.openGallery(0);
+		});
+
+
+
+		const $dynamicGallerNcyu = document.getElementById("dynamic-gallery-ncyu");
+		const dynamicGalleryNcyu = window.lightGallery($dynamicGallerNcyu, {
+			dynamic: true,
+			plugins: [lgZoom, lgThumbnail],
+			dynamicEl: [
+				{
+					src: "img/ncyu/1.gif",
+					thumb: "img/ncyu/1.gif",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4嘉義大學</h4>
+                <p></p></div>
+						`
+				},
+				{
+					src: "img/ncyu/2.png",
+					thumb: "img/ncyu/2.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4嘉義大學</h4>
+                <p>首頁</p></div>
+						`
+				},
+				{
+					src: "img/ncyu/3.png",
+					thumb: "img/ncyu/3.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>嘉義大學</h4>
+                <p>行政單位</p></div>
+						`
+				},
+				{
+					src: "img/ncyu/4.png",
+					thumb: "img/ncyu/4.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>嘉義大學</h4>
+                <p>校園特色</p></div>
+						`
+				},
+				{
+					src: "img/ncyu/5.png",
+					thumb: "img/ncyu/5.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>嘉義大學</h4>
+                <p>防疫專區</p></div>
+						`
+				},
+				{
+					src: "img/ncyu/6.png",
+					thumb: "img/ncyu/6.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>嘉義大學</h4>
+                <p>新生專區</p></div>
+						`
+				},
+				{
+					src: "img/ncyu/7.png",
+					thumb: "img/ncyu/7.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>嘉義大學</h4>
+                <p>E化校園</p></div>
+						`
+				},
+				{
+					src: "img/ncyu/8.png",
+					thumb: "img/ncyu/8.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>嘉義大學</h4>
+                <p>列表頁</p></div>
+						`
+				},
+				{
+					src: "img/ncyu/9.png",
+					thumb: "img/ncyu/9.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>嘉義大學</h4>
+                <p>常見問題</p></div>
+						`
+				}
+			]
+		});
+		$dynamicGallerNcyu.addEventListener("click", () => {
+			dynamicGalleryNcyu.openGallery(0);
+		});
+
+
+		const $dynamicGalleryOcac = document.getElementById("dynamic-gallery-ocac");
+		const dynamicGalleryOcac = window.lightGallery($dynamicGalleryOcac, {
+			dynamic: true,
+			plugins: [lgZoom, lgThumbnail],
+			dynamicEl: [
+				{
+					src: "img/ocac/1.gif",
+					thumb: "img/chat/1.gif",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>中華民國僑務委員會</h4>
+                <p>首頁</p></div>
+						`
+				},
+				{
+					src: "img/ocac/2.png",
+					thumb: "img/ocac/2.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>國防部智能客服</h4>
+                <p>首頁</p></div>
+						`
+				}
+			]
+		});
+		$dynamicGalleryOcac.addEventListener("click", () => {
+			dynamicGalleryOcac.openGallery(0);
+		});
+
+
+
+		const $dynamicGalleryTax = document.getElementById("dynamic-gallery-tax");
+		const dynamicGalleryTax = window.lightGallery($dynamicGalleryTax, {
+			dynamic: true,
+			plugins: [lgZoom, lgThumbnail],
+			dynamicEl: [
+				{
+					src: "img/tax/1.gif",
+					thumb: "img/tax/1.gif",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>基隆市稅務局</h4>
+                <p>首頁</p></div>
+						`
+				},
+				{
+					src: "img/tax/2.png",
+					thumb: "img/tax/2.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>基隆市稅務局</h4>
+                <p>首頁</p></div>
+						`
+				}
+			]
+		});
+		$dynamicGalleryTax.addEventListener("click", () => {
+			dynamicGalleryTax.openGallery(0);
+		});
+
+
+
+		const $dynamicGalleryTaipion = document.getElementById("dynamic-gallery-taipion");
+		const dynamicGalleryTaipion = window.lightGallery($dynamicGalleryTaipion, {
+			dynamic: true,
+			plugins: [lgZoom, lgThumbnail],
+			dynamicEl: [
+				{
+					src: "img/taipeion/1.png",
+					thumb: "img/taipeion/1.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>TAIPEION</h4>
+                <p>登入頁</p></div>
+						`
+				},
+				{
+					src: "img/taipeion/2.png",
+					thumb: "img/taipeion/2.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>TAIPEION</h4>
+                <p>儀錶板</p></div>
+						`
+				}
+				,
+				{
+					src: "img/taipeion/3.png",
+					thumb: "img/taipeion/3.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>TAIPEION</h4>
+                <p>登入頁</p></div>
+						`
+				}
+				,
+				{
+					src: "img/taipeion/4.png",
+					thumb: "img/taipeion/4.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>TAIPEION</h4>
+                <p>自然人憑證管理</p></div>
+						`
+				}
+				,
+				{
+					src: "img/taipeion/5.png",
+					thumb: "img/taipeion/5.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>TAIPEION</h4>
+                <p>自然人憑證及行動載具管理</p></div>
+						`
+				}
+				,
+				{
+					src: "img/taipeion/6.png",
+					thumb: "img/taipeion/6.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>TAIPEION</h4>
+                <p>行動載具管理</p></div>
+						`
+				}
+			]
+		});
+		$dynamicGalleryTaipion.addEventListener("click", () => {
+			dynamicGalleryTaipion.openGallery(0);
+		});
+
+
+
+		const $dynamicGalleryKc = document.getElementById("dynamic-gallery-kc");
+		const dynamicGalleryKc = window.lightGallery($dynamicGalleryKc, {
+			dynamic: true,
+			plugins: [lgZoom, lgThumbnail],
+			dynamicEl: [
+				{
+					src: "img/kc/1.gif",
+					thumb: "img/kc/1.gif",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>金門縣行動智慧辦公系統</h4>
+                <p>儀錶板</p></div>
+						`
+				},
+				{
+					src: "img/kc/2.png",
+					thumb: "img/kc/2.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>金門縣行動智慧辦公系統</h4>
+                <p>儀錶板 A版</p></div>
+						`
+				}
+				,
+				{
+					src: "img/kc/3.png",
+					thumb: "img/kc/3.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>金門縣行動智慧辦公系統</h4>
+                <p>儀錶板 B版</p></div>
+						`
+				}
+			]
+		});
+		$dynamicGalleryKc.addEventListener("click", () => {
+			dynamicGalleryKc.openGallery(0);
+		});
+
+
+
+		const $dynamicGalleryJy = document.getElementById("dynamic-gallery-jy");
+		const dynamicGalleryJy = window.lightGallery($dynamicGalleryJy, {
+			dynamic: true,
+			plugins: [lgZoom, lgThumbnail],
+			dynamicEl: [
+				{
+					src: "img/jy/1.gif",
+					thumb: "img/jy/1.gif",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>司法院單一帳管系統</h4>
+                <p>儀錶板</p></div>
+						`
+				},
+				{
+					src: "img/jy/2.png",
+					thumb: "img/jy/2.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>司法院單一帳管系統</h4>
+                <p>儀錶板 A版</p></div>
+						`
+				}
+				,
+				{
+					src: "img/jy/3.png",
+					thumb: "img/jy/3.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>司法院單一帳管系統</h4>
+                <p>儀錶板 B版</p></div>
+						`
+				}
+			]
+		});
+		$dynamicGalleryJy.addEventListener("click", () => {
+			dynamicGalleryJy.openGallery(0);
+		});
+
+
+
+		const $dynamicGalleryYi = document.getElementById("dynamic-gallery-yi");
+		const dynamicGalleryYi = window.lightGallery($dynamicGalleryYi, {
+			dynamic: true,
+			plugins: [lgZoom, lgThumbnail],
+			dynamicEl: [
+				{
+					src: "img/yi/1.gif",
+					thumb: "img/yi/1.gif",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+                <h4>宜蘭縣員工登入網</h4>
+                <p>儀錶板</p></div>
+						`
+				},
+				{
+					src: "img/yi/2.png",
+					thumb: "img/yi/2.png",
+					subHtml:
+						`
+					<div class="lightGallery-captions">
+						<h4>宜蘭縣員工登入網</h4>
+                <p>儀錶板</p></div>
+						`
+				}
+			]
+		});
+		$dynamicGalleryYi.addEventListener("click", () => {
+			dynamicGalleryYi.openGallery(0);
+		});
+
+
+	</script>
 </body>
 
 </html>
